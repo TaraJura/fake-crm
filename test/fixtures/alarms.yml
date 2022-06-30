@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ort_name: MyString
+  ort_text: MyString
+  ort_typ_alarm: 1
+  ort_zarizeniid: MyString
+  ort_datovapromennaid: MyString
+  statuscode: 1
+
+two:
+  ort_name: MyString
+  ort_text: MyString
+  ort_typ_alarm: 1
+  ort_zarizeniid: MyString
+  ort_datovapromennaid: MyString
+  statuscode: 1

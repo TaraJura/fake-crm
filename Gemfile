@@ -17,6 +17,8 @@ gem "bootsnap", require: false
 gem "image_processing", "~> 1.2"
 gem 'jsonapi.rb'
 gem "typhoeus"
+gem 'haml', '~> 5.2', '>= 5.2.2'
+
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]

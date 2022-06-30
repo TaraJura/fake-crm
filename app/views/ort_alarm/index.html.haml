@@ -1,0 +1,37 @@
+%h1
+  =t "Alarms"
+%div
+  %table{style: "border: 1px solid black ; text-align: center;"}
+    %thead
+      %tr
+        %th{style: "border: 1px solid black"}
+          %strong
+            =t "ID"
+        %th{style: "border: 1px solid black"}
+          %strong
+            =t "Name"
+        %th{style: "border: 1px solid black"}
+          %strong
+            =t "text"
+        %th{style: "border: 1px solid black"}
+          %strong
+            =t "typ_alarmu"
+        %th{style: "border: 1px solid black"}
+          %strong
+            =t "zarizeniid"
+        %th{style: "border: 1px solid black"}
+          %strong
+            =t "datova prommena ID"
+        %th{style: "border: 1px solid black"}
+          %strong
+            =t "statuscode"
+    %tbody
+      - @alarm.each do |zone|
+        %tr
+          %td{style: "border: 1px solid black"}= zone.id
+          %td{style: "border: 1px solid black"}= zone.ort_name
+          %td{style: "border: 1px solid black"}= zone.ort_text
+          %td{style: "border: 1px solid black"}= zone.ort_typ_alarm
+          %td{style: "border: 1px solid black"}= zone.ort_zarizeniid
+          %td{style: "border: 1px solid black"}= zone.ort_datovapromennaid
+          %td{style: "border: 1px solid black"}= zone.statuscode
